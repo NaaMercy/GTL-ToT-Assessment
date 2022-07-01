@@ -28,7 +28,7 @@ class _LoadingViewState extends State<LoadingView> {
     double longi = point.longitude;
     var soildata = await soil.getSoilLatest(lati, longi);
 
-    //correct this to ghg later
+   
     var ghgdata = await ghg.getGhgLatest(lati, longi);
 
     Navigator.push(context, MaterialPageRoute(builder: (context) {
